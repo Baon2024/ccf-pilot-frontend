@@ -4,6 +4,12 @@ import { useEffect, useState } from "react"
 import { Music, Target, Globe, ArrowRight, Mail, Plus, X, ChevronDown, ChevronRight } from "lucide-react"
 import { toast } from "sonner"
 
+
+let baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:5001"
+
+console.log("baseUrl in frontend is ", baseUrl)
+
+
 export default function ArtistFormStreamPromise({
   setMarketingStrategy,
   setIsOpen,
