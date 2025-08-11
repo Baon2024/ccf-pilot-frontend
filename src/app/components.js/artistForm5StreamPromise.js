@@ -113,12 +113,12 @@ export default function ArtistFormStreamPromise({
 
     //frontend code for streaming: need to create individual server endpoints, just send same formdata to each and use whats neccesary
 
-    
+    //5001 lcoalhost
     const endpoints = {
-  pressRelease: "http://localhost:5001/pressRelease",
-  fontRecommendation: "http://localhost:5001/fonts",
-  logoOptions: "http://localhost:5001/logos",
-  keyWordsPhrases: "http://localhost:5001/keywords"
+  pressRelease: "https://ccf-pilot-backend.onrender.com/pressRelease",
+  fontRecommendation: "https://ccf-pilot-backend.onrender.com/fonts",
+  logoOptions: "https://ccf-pilot-backend.onrender.com/logos",
+  keyWordsPhrases: "https://ccf-pilot-backend.onrender.com/keywords"
 };
 
 setLoading(false)
